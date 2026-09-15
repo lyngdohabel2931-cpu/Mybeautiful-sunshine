@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For My Beautiful Sunshine ☀️💌</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background: linear-gradient(135deg, #ffe6ef, #fff7fb 55%, #ffeaf4);
+    color: #4a2635;
+    overflow: hidden;
+  }
+  .hearts span {
+    position: fixed;
+    bottom: -30px;
+    font-size: 22px;
+    animation: float 7s linear infinite;
+    opacity: .65;
+    pointer-events: none;
+  }
+  .hearts span:nth-child(1){left:8%;animation-delay:0s}
+  .hearts span:nth-child(2){left:22%;animation-delay:2s}
+  .hearts span:nth-child(3){left:42%;animation-delay:4s}
+  .hearts span:nth-child(4){left:67%;animation-delay:1s}
+  .hearts span:nth-child(5){left:88%;animation-delay:3s}
+  @keyframes float {
+    to { transform: translateY(-115vh) rotate(25deg); opacity: 0; }
+  }
+  .wrap {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 20px;
+  }
+  .card {
+    width: min(92vw, 560px);
+    background: rgba(255,255,255,.9);
+    border: 2px solid #ffd0df;
+    border-radius: 28px;
+    padding: 15px 28px 34px;
+    text-align: center;
+    box-shadow: 0 20px 60px rgba(132, 50, 83, .16);
+    position: relative;
+    z-index: 2;
+  }
+  .emoji { font-size: 38px; margin-bottom: 8px; }
+  h1 { margin: 0 0 12px; font-size: clamp(18px, 4vw, 38px); }
+  p { font-size: 16px; line-height: 1.0; margin: 7px auto; max-width: 400px; }
+  .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    margin-top: 28px;
+    flex-wrap: wrap;
+  }
+  button {
+    border: 0;
+    border-radius: 800px;
+    padding: 14px 24px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: transform .18s ease, box-shadow .18s ease;
+  }
+  #yes {
+    background: #ff5f93;
+    color: white;
+    box-shadow: 0 8px 20px rgba(255,95,147,.3);
+  }
+  #yes:hover { transform: scale(1.06); }
+  #no {
+    background: #f5e8ee;
+    color: #714658;
+    position: relative;
+  }
+  .tiny {
+    margin-top: 22px;
+    font-size: 12px;
+    opacity: .6;
+  }
+  .hidden { display: none; }
+  .celebrate {
+    animation: pop .5s ease;
+  }
+  @keyframes pop {
+    0% { transform: scale(.8); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+  }
+  .confetti {
+    position: fixed;
+    top: -20px;
+    font-size: 24px;
+    animation: fall 3s linear forwards;
+    z-index: 5;
+    pointer-events: none;
+  }
+  @keyframes fall {
+    to { transform: translateY(110vh) rotate(720deg); opacity: 0; }
+  }
+</style>
+</head>
+<body>
+
+<div class="hearts">
+  <span>💗</span><span>💕</span><span>💖</span><span>💘</span><span>💝</span>
+</div>
+
+<div class="wrap">
+  <main class="card" id="card">
+    <div class="emoji">☀️💌</div>
+    <div class="tiny">A highly classified romantic investigation</div>
+    <h1>Miss <span style="color:#d45d87">Alia Syiemlieh</span> 💗</h1>
+    <div class="story">
+
+  <p class="intro">
+    12 April 2026 was just another day on the calendar...
+    <br>
+    Until I met you. ☀️
+  </p>
+
+  <div class="time-box">
+    <span>161 days</span>
+    <span>•</span>
+    <span>3,864 hours</span>
+    <span>•</span>
+    <span>231,840 minutes</span>
+    <span>•</span>
+    <span>13,910,400 seconds</span>
+  </div>
+
+  <p class="date-line">
+    since <b>11 April 2026</b> — the day I first met you. 💗
+  </p>
+
+  <div class="memory">
+    Every time we're together, somehow we end up
+    <b>hahaha-ing</b> and <b>hehehe-ing</b> until we completely
+    forget about the whole world. 😂🌿
+  </div>
+
+  <div class="career">
+    <div class="career-title">Future Career Prediction 🔮</div>
+
+    <p>
+      And honestly, I can already see your future career:
+    </p>
+
+    <strong>
+      Professional Tourist Guide + Influencer
+    </strong>
+
+    <div class="career-emoji">🗺️📸</div>
+
+    <p class="small-text">
+      Because somehow, every time we go hunting for new places,
+      it turns into an adventure. 😂
+    </p>
+  </div>
+
+  <p class="peace">
+    And somewhere between all those random adventures,
+    laughs, and <i>hahaha + hehehe</i> moments...
+    <br><br>
+    <span>You are my peace.</span> 🤍
+  </p>
+
+  <div class="conclusion">
+    <p>
+      I have reached a very important conclusion.
+    </p>
+
+    <p>
+      After extensive research, several unnecessary calculations,
+      and absolutely zero consultation...
+    </p>
+
+    <p class="question-intro">
+      <b>I have a question for you.</b> 👀
+    </p>
+  </div>
+
+  <div class="proposal">
+    <div class="proposal-small">So, my Beautiful Sunshine...</div>
+
+    <div class="proposal-question">
+      <b>Will you be my girlfriend?
+    </div>
+
+    <div class="proposal-emoji">
+      ☀️💗
+    </div>
+  </div>
+
+</div>
+
+    <div class="buttons">
+      <button id="yes">YES, obviously 💖</button>
+      <button id="no">Hmm... NO 🙈</button>
+    </div>
+
+    <a href="https://www.youtube.com/watch?v=cdG-VkY9XmA&list=RDEM167Aw5E6jvFLusrEZ1TC6g&index=4" rel="noopener noreferrer" style="display:inline-block;margin-top:20px;color:#71374f;text-decoration:none;font-size:13px">🎵 Click to Play a dramatic background song: “Tell me that you love me”</a>
+    <div class="tiny">*Made with love, chaos, questionable coding decisions, and approximately 9000 thoughts about you.</div>
+  </main>
+</div>
+
+<script>
+const yes = document.getElementById("yes");
+const no = document.getElementById("no");
+const card = document.getElementById("card");
+
+let noClicks = 0;
+const noMessages = [
+  "Are you sure? 🥺",
+  "Beautiful Sunshine, please inspect your answer again. 👀",
+  "The tourist guide has taken a wrong turn. 🗺️😂",
+  "Hahaha... I think that button is broken.",
+  "Okay okay, I'm starting to think you enjoy bullying me. 😭",
+  "Fine 😂 But YES is still looking adorable. 💗"
+];
+
+no.addEventListener("click", () => {
+  noClicks++;
+
+  // Funny but harmless: the button dodges around the card.
+  const maxX = Math.max(40, card.clientWidth / 2 - 80);
+  const x = (Math.random() * maxX * 2) - maxX;
+  const y = (Math.random() * 100) - 50;
+
+  no.style.transform = `translate(${x}px, ${y}px)`;
+  no.textContent = noMessages[Math.min(noClicks - 1, noMessages.length - 1)];
+
+  if (noClicks >= 5) {
+    no.textContent = "Fine, I'll stop running 😂";
+  }
+});
+
+yes.addEventListener("click", () => {
+  card.classList.add("celebrate");
+  card.innerHTML = `
+    <div class="emoji">☀️💖🎉</div>
+    <h1>YAYYYYY, Beautiful Sunshine! 🥹</h1>
+    <p>Official result: <b>YES</b> has been successfully recorded.</p>
+    <p><b>NEW STATUS UNLOCKED:</b><br>Mayalu 💗<br><br>
+    Future tourist guide: Confirmed 🗺️<br>
+    Future influencer: Pending sponsorship 😂📸<br>
+    Professional laugh partner: Permanently hired 😌</p>
+    <p>Here's to more random adventures, more <b>hahaha + hehehe</b>, and more moments where we completely forget about the world.</p>
+    <p style="font-size:21px"><i>Thank you for being my peace. 🤍</i></p>
+    <p>Now go & send a voice message of those word he yearn to hear, Mayalu. 😌💌</p>
+    <div class="tiny">Case closed. Love wins. The tourist guide approves. 🌸</div>
+  `;
+
+  // Confetti
+  const pieces = ["💗","💖","💕","✨","🎉","💝"];
+  for (let i = 0; i < 45; i++) {
+    const el = document.createElement("div");
+    el.className = "confetti";
+    el.textContent = pieces[Math.floor(Math.random() * pieces.length)];
+    el.style.left = Math.random() * 100 + "vw";
+    el.style.animationDelay = Math.random() * .8 + "s";
+    document.body.appendChild(el);
+    setTimeout(() => el.remove(), 4000);
+  }
+});
+</script>
+
+</body>
+</html>
